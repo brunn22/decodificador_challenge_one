@@ -28,12 +28,12 @@
   </head>
 
   <body>
-    <div class="layout-grade">
-      <div class="primeira-coluna">
-        <header class="cabeçalho">
+    <div class="grid-layout">
+      <div class="first-column">
+        <header class="header">
           <h1>
             <img
-              class="cabeçalho-logo"
+              class="header-logo"
               src="img/logo-alura.svg"
               alt="Logo Alura"
             />
@@ -50,37 +50,37 @@
             <ion-icon name="information-circle" class="info-icon"></ion-icon>
             <p>Apenas letras minúsculas e sem acento.</p>
           </div>
-          <button class="decod decod-secondary btn-paste hidden" id="paste">
+          <button class="btn btn-secondary btn-paste hidden" id="paste">
             Colar
           </button>
         </section>
 
-        <div class="decod-area">
-          <button class="decod decod-primary" id="encrypt">Criptografar</button>
-          <button class="decod decod-secondary" id="decrypt">
+        <div class="btn-area">
+          <button class="btn btn-primary" id="encrypt">Criptografar</button>
+          <button class="btn btn-secondary" id="decrypt">
             Descriptografar
           </button>
         </div>
       </div>
 
-      <div class="resultado">
-        <div class="resultado-off">
+      <div class="result">
+        <div class="result-off">
           <img
-            class="img-resultado"
+            class="result-img"
             src="img/results-art.svg"
             alt="Ilustração de um menino com uma lupa observando um diamante"
           />
-          <h2 class="titulo-resultado">Nenhuma mensagem encontrada</h2>
-          <p class="texto-resultado">
+          <h2 class="result-title">Nenhuma mensagem encontrada</h2>
+          <p class="result-text">
             Digite um texto que você deseja criptografar ou descriptografar.
           </p>
         </div>
 
-        <div class="resultado-on hidden">
-          <textarea class="resultado-textarea">
+        <div class="result-on hidden">
+          <textarea class="result-textarea">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sapiente exercitationem? Mollitia delectus ut, at aliquid blanditiis, molestias placeat aperiam consequatur rem consectetur itaque nostrum. Corrupti voluptate facere 
           </textarea>
-          <button class="decod decod-secondary" id="copy">Copiar</button>
+          <button class="btn btn-secondary" id="copy">Copiar</button>
         </div>
       </div>
     </div>
