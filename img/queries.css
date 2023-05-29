@@ -1,0 +1,111 @@
+/*Below 1200px *Landscape Tablets*/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid-layout {
+    margin: 4rem 2rem;
+  }
+
+  .first-column {
+    grid-row-gap: 2rem;
+  }
+
+  .input {
+    margin-bottom: 1rem;
+  }
+}
+
+/*******************************/
+/*BELOW 944px *Tablets*/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid-layout {
+    max-width: 90rem;
+    grid-template-columns: 1fr;
+  }
+
+  .header-logo {
+    margin-bottom: 2rem;
+  }
+
+  .input {
+    width: 90%;
+    margin: 0 0 2rem 2rem;
+  }
+
+  .btn-area {
+    margin: 0 0 3rem 2rem;
+    width: 60rem;
+  }
+
+  .btn {
+    padding: 0 7rem;
+    border-radius: 1.6rem;
+  }
+
+  .btn-paste {
+    padding: 0 2rem;
+    border-radius: 0.8rem;
+  }
+
+  .result {
+    border-radius: 2.4rem;
+    min-height: 30rem;
+  }
+
+  .result-off {
+    padding: 2rem;
+  }
+
+  .result-img {
+    display: none;
+  }
+
+  .result-on {
+    height: 60rem;
+  }
+}
+
+/*******************************/
+/*BELOW 544px *Phones*/
+
+@media (max-width: 34em) {
+  .input {
+    margin: 0 0 2rem 0;
+    width: 100%;
+  }
+
+  .btn-area {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 0rem;
+  }
+
+  .btn {
+    height: 6rem;
+    padding: 2 8rem;
+  }
+
+  .btn-paste {
+    height: 3rem;
+  }
+
+  .grid-layout {
+    height: auto;
+  }
+
+  .result {
+    margin: 1rem;
+  }
+
+  .result-on {
+    height: 40rem;
+  }
+}
