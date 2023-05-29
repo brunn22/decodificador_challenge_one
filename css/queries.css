@@ -1,15 +1,15 @@
-/*Abaixo 1200px *Paisagem Tablets*/
+/*Below 1200px *Landscape Tablets*/
 
 @media (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
 
-  .layout-grade {
+  .grid-layout {
     margin: 4rem 2rem;
   }
 
-  .primeira-coluna {
+  .first-column {
     grid-row-gap: 2rem;
   }
 
@@ -19,18 +19,18 @@
 }
 
 /*******************************/
-/*Abaixo 944px *Tablets*/
+/*BELOW 944px *Tablets*/
 @media (max-width: 59em) {
   html {
     font-size: 50%;
   }
 
-  .layout-grade {
+  .grid-layout {
     max-width: 90rem;
     grid-template-columns: 1fr;
   }
 
-  .cabecalho-logo {
+  .header-logo {
     margin-bottom: 2rem;
   }
 
@@ -39,41 +39,41 @@
     margin: 0 0 2rem 2rem;
   }
 
-  .decod-area {
+  .btn-area {
     margin: 0 0 3rem 2rem;
     width: 60rem;
   }
 
-  .bng {
+  .btn {
     padding: 0 7rem;
     border-radius: 1.6rem;
   }
 
-  .decod-paste {
+  .btn-paste {
     padding: 0 2rem;
     border-radius: 0.8rem;
   }
 
-  .resultado {
+  .result {
     border-radius: 2.4rem;
     min-height: 30rem;
   }
 
-  .resultado-off {
+  .result-off {
     padding: 2rem;
   }
 
-  .img-resultado {
+  .result-img {
     display: none;
   }
 
-  .resultado-on {
+  .result-on {
     height: 60rem;
   }
 }
 
 /*******************************/
-/*Abaixo 544px *Phones*/
+/*BELOW 544px *Phones*/
 
 @media (max-width: 34em) {
   .input {
@@ -81,31 +81,31 @@
     width: 100%;
   }
 
-  .decod-area {
+  .btn-area {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin-left: 0rem;
   }
 
-  .bng {
+  .btn {
     height: 6rem;
     padding: 2 8rem;
   }
 
-  .decod-paste {
+  .btn-paste {
     height: 3rem;
   }
 
-  .layout-grade {
+  .grid-layout {
     height: auto;
   }
 
-  .resultado {
+  .result {
     margin: 1rem;
   }
 
-  .resultado-on {
+  .result-on {
     height: 40rem;
   }
 }
