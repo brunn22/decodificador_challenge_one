@@ -12,7 +12,7 @@
 
 <h3>▶ Como rodar:</h3>
 <div>
-    <p>Você pode acessar <a href="https://.github.io/decodificador-challenge-one/">clicando aqui</a>.</p>
+    <p>Você pode acessar <a href=https://brunn22.github.io/decodificador_challenge_one">clicando aqui</a>.</p>
 
 </div>
 <hr>
