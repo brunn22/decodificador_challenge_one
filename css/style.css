@@ -1,4 +1,4 @@
-/* CORES */
+/* COLORS */
 
 :root {
   --primary-color: #0a3871;
@@ -12,7 +12,7 @@
   --color-red: #f00;
 }
 
-/* ESTILOS GERAIS */
+/* GENERAL STYLES */
 
 * {
   padding: 0;
@@ -34,9 +34,9 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* GRADE */
+/* GRID */
 
-.layout-grade {
+.grid-layout {
   margin: 4rem auto;
   max-width: 120rem;
   /* display: flex; */
@@ -46,15 +46,15 @@ body {
   grid-column-gap: 4rem;
 }
 
-.primeira-coluna {
+.first-column {
   max-height: 85vh;
   display: grid;
   grid-row-gap: 3rem;
   grid-template-rows: 1fr 17fr 2fr;
 }
 
-/* CABEÇALHO */
-.cabecalho-logo {
+/* HEADER */
+.header-logo {
   height: 4.8rem;
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 .input-textarea,
-.resultado-textarea {
+.result-textarea {
   font-weight: 400;
   color: var(--primary-color);
   border: none;
@@ -113,15 +113,15 @@ body {
   color: var(--color-red);
 }
 
-/* BOTÕES */
-.decod-area {
+/* BUTTONS */
+.btn-area {
   margin: 0 0 0 auto;
   width: 60rem;
   display: flex;
   justify-content: space-between;
 }
 
-.bng {
+.btn {
   height: 6rem;
   font-size: 1.6rem;
   font-weight: 400;
@@ -134,26 +134,26 @@ body {
   transition: all 0.5s;
 }
 
-.decod-primary {
+.btn-primary {
   color: var(--color-white);
   background-color: var(--primary-color);
 }
 
-.decod-primary:hover {
+.btn-primary:hover {
   background-color: var(--primary-color-dark);
 }
 
-.decod-secondary {
+.btn-secondary {
   color: var(--primary-color);
   background-color: transparent;
   border: 2px solid var(--primary-color);
 }
 
-.decod-secondary:hover {
+.btn-secondary:hover {
   background-color: rgba(93, 92, 92, 0.084);
 }
 
-.decod-paste {
+.btn-paste {
   position: absolute;
   top: -4rem;
   right: 0rem;
@@ -164,9 +164,9 @@ body {
   border-radius: 1rem;
 }
 
-/* RESULTADOS */
+/* RESULTS */
 
-.resultado {
+.result {
   position: relative;
 
   width: 100%;
@@ -177,7 +177,7 @@ body {
   margin: 2rem;
 }
 
-.resultado-off {
+.result-off {
   position: absolute;
   height: 100%;
   padding: 3rem;
@@ -187,38 +187,38 @@ body {
   transition: all 0.3s;
 }
 
-.img-resultado {
+.result-img {
   width: 30rem;
   margin-bottom: 2rem;
 }
 
-.titulo-resultado {
+.result-title {
   font-weight: 700;
   font-size: 2.4rem;
   color: var(--grey-dark);
   margin-bottom: 2rem;
 }
 
-.texto-resultado {
+.result-text {
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--grey-light);
   line-height: 2.4rem;
 }
 
-.resultado-on {
+.result-on {
   position: absolute;
   height: 100%;
   padding: 2rem;
 }
 
-.resultado-textarea {
+.result-textarea {
   height: 85%;
   margin-bottom: 2rem;
   border-radius: 2rem;
 }
 
-.resultado-textarea:focus,
+.result-textarea:focus,
 .copy:focus {
   box-shadow: 0 0 0.8rem 0.5rem rgba(214, 214, 214, 0.5);
 }
