@@ -3,15 +3,15 @@ const output = document.querySelector(".result-textarea");
 const resultOn = document.querySelector(".result-on");
 const resultOff = document.querySelector(".result-off");
 const inputArea = document.querySelector(".input");
-const decodEncrypt = document.getElementById("encrypt");
-const decodDecrypt = document.getElementById("decrypt");
-const decodCopy = document.getElementById("copy");
-const decodPaste = document.getElementById("paste");
+const btnEncrypt = document.getElementById("encrypt");
+const btnDecrypt = document.getElementById("decrypt");
+const btnCopy = document.getElementById("copy");
+const btnPaste = document.getElementById("paste");
 
-decodEncrypt.addEventListener("click", encrypt);
-decodDecrypt.addEventListener("click", decrypt);
-decodCopy.addEventListener("click", copy);
-decodPaste.addEventListener("click", paste);
+btnEncrypt.addEventListener("click", encrypt);
+btnDecrypt.addEventListener("click", decrypt);
+btnCopy.addEventListener("click", copy);
+btnPaste.addEventListener("click", paste);
 input.addEventListener("keypress", clearPaste);
 
 function encrypt() {
@@ -25,7 +25,7 @@ function decrypt() {
 }
 
 function copy() {
-  if (decodCopy.classList.contains("copy")) return;
+  if (btnCopy.classList.contains("copy")) return;
 
   const text = output;
   text.select();
@@ -33,18 +33,18 @@ function copy() {
   document.execCommand("copy");
 
   changeCopy("copied");
-  decodPaste.classList.remove("hidden");
+  btnPaste.classList.remove("hidden");
 }
 
 function paste() {
   input.value = output.value;
   toggleResult();
-  decodPaste.classList.add("hidden");
+  btnPaste.classList.add("hidden");
   changeCopy("copy");
 }
 
 function clearPaste() {
-  if (!decodPaste.classList.contains("hidden")) decodPaste.classList.add("hidden");
+  if (!btnPaste.classList.contains("hidden")) btnPaste.classList.add("hidden");
 }
 
 function changeText(method) {
@@ -72,14 +72,14 @@ function changeText(method) {
 
 function displayResult(result) {
   output.textContent = result;
-  if (decodCopy.classList.contains("copy")) changeCopy("copy");
+  if (btnCopy.classList.contains("copy")) changeCopy("copy");
   if (!resultOff.classList.contains("hidden")) toggleResult();
 }
 
 function changeCopy(condition) {
   if (condition == "copied")
-    copyUpdate("decod-secondary", "copied", "✔ Copiado");
-  if (condition == "copy") copyUpdate("copied", "decod-secondary", "Copiar");
+    copyBtnUpdate("btn-secondary", "copied", "✔ Copiado");
+  if (condition == "copy") copyBtnUpdate("copied", "btn-secondary", "Copiar");
 }
 
 function toggleResult() {
@@ -120,8 +120,8 @@ function switchChar(char, defaultText, newText) {
   }
 }
 
-function copyUpdate(classRemove, classAdd, text) {
-  decodCopy.classList.remove(classRemove);
-  decodCopy.classList.add(classAdd);
-  decodCopy.textContent = text;
+function copyBtnUpdate(classRemove, classAdd, text) {
+  btnCopy.classList.remove(classRemove);
+  btnCopy.classList.add(classAdd);
+  btnCopy.textContent = text;
 }
