@@ -1,0 +1,111 @@
+/*Abaixo 1200px *Paisagem Tablets*/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .layout-grade {
+    margin: 4rem 2rem;
+  }
+
+  .primeira-coluna {
+    grid-row-gap: 2rem;
+  }
+
+  .input {
+    margin-bottom: 1rem;
+  }
+}
+
+/*******************************/
+/*Abaixo 944px *Tablets*/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .layout-grade {
+    max-width: 90rem;
+    grid-template-columns: 1fr;
+  }
+
+  .cabeçalho-logo {
+    margin-bottom: 2rem;
+  }
+
+  .input {
+    width: 90%;
+    margin: 0 0 2rem 2rem;
+  }
+
+  .decod-area {
+    margin: 0 0 3rem 2rem;
+    width: 60rem;
+  }
+
+  .decod {
+    padding: 0 7rem;
+    border-radius: 1.6rem;
+  }
+
+  .decod-paste {
+    padding: 0 2rem;
+    border-radius: 0.8rem;
+  }
+
+  .resultado {
+    border-radius: 2.4rem;
+    min-height: 30rem;
+  }
+
+  .resultado-off {
+    padding: 2rem;
+  }
+
+  .img-resultado {
+    display: none;
+  }
+
+  .resultado-on {
+    height: 60rem;
+  }
+}
+
+/*******************************/
+/*Abaixo 544px *Phones*/
+
+@media (max-width: 34em) {
+  .input {
+    margin: 0 0 2rem 0;
+    width: 100%;
+  }
+
+  .decod-area {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 0rem;
+  }
+
+  .decod {
+    height: 6rem;
+    padding: 2 8rem;
+  }
+
+  .decod-paste {
+    height: 3rem;
+  }
+
+  .layout-grade {
+    height: auto;
+  }
+
+  .resultado {
+    margin: 1rem;
+  }
+
+  .resultado-on {
+    height: 40rem;
+  }
+}
