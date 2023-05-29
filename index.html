@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="script.js"></script>
+
+    <title>Decodificador</title>
+  </head>
+
+  <body>
+    <div class="layout-grade">
+      <div class="primeira-coluna">
+        <header class="cabeçalho">
+          <h1>
+            <img
+              class="cabeçalho-logo"
+              src="img/logo-alura.svg"
+              alt="Logo Alura"
+            />
+          </h1>
+        </header>
+
+        <section class="input">
+          <textarea
+            class="input-textarea"
+            type="text"
+            placeholder="Digite seu texto"
+          ></textarea>
+          <div class="input-info">
+            <ion-icon name="information-circle" class="info-icon"></ion-icon>
+            <p>Apenas letras minúsculas e sem acento.</p>
+          </div>
+          <button class="decod decod-secondary btn-paste hidden" id="paste">
+            Colar
+          </button>
+        </section>
+
+        <div class="decod-area">
+          <button class="decod decod-primary" id="encrypt">Criptografar</button>
+          <button class="decod decod-secondary" id="decrypt">
+            Descriptografar
+          </button>
+        </div>
+      </div>
+
+      <div class="resultado">
+        <div class="resultado-off">
+          <img
+            class="img-resultado"
+            src="img/results-art.svg"
+            alt="Ilustração de um menino com uma lupa observando um diamante"
+          />
+          <h2 class="titulo-resultado">Nenhuma mensagem encontrada</h2>
+          <p class="texto-resultado">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+
+        <div class="resultado-on hidden">
+          <textarea class="resultado-textarea">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sapiente exercitationem? Mollitia delectus ut, at aliquid blanditiis, molestias placeat aperiam consequatur rem consectetur itaque nostrum. Corrupti voluptate facere 
+          </textarea>
+          <button class="decod decod-secondary" id="copy">Copiar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
